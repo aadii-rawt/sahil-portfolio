@@ -9,21 +9,25 @@ import Skills from './components/skills/Skills'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import Home from './pages/Home'
+import ComingSoon from './pages/ComingSoon'
 
 const App = () => {
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Navbar />
-        <Routes>
+        <Routes> */}
           {/* <Route path='/' element={<Hero/>} />
               <Route path='about' element={<About/>} />
               <Route path='projects' element={<Projects/>} />
               <Route path='contact' element={<Contact/>} /> */}
-              <Route path='/' element={<Home />} />
+              {/* <Route path='/' element={<Home />} />
 
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <div className='relative overflow-hidden'>
+        <ComingSoon/>
+      </div>
     </>
   )
 }
