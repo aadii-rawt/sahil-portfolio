@@ -2,14 +2,17 @@ import React from 'react'
 import { BrowserRouter, Route, Routes }
   from 'react-router-dom'
 import ComingSoon from './pages/ComingSoon'
+import Homepage from './pages/Homepage'
 
 const App = () => {
   return (
-    <>
-      <div className='relative overflow-hidden'>
+    <div className='bg-[#0F0F10]'>
+
+      {/* <div className='relative overflow-hidden'>
         <ComingSoon/>
-      </div>
-    </>
+      </div> */}
+      <Homepage/>
+    </div>
   )
 }
 
