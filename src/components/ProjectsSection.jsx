@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const ProjectsSection = () => {
     return (
-        <div className='py-6'>
+        <div className='py-6' id='work'>
             <h1 className="font-semibold tracking-tight text-4xl sm:text-6xl md:text-6xl py-6 px-6">
                 <span className="blok text-white">Recent </span>
                 <span className="blck">

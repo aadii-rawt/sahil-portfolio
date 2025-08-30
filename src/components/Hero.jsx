@@ -5,7 +5,7 @@ export default function HeroSection() {
     return (
 
         <section className=" text-white">
-            <div className="mx-auto max-w-5xl px-6 py-16 md:py-24">
+            <div className="mx-auto max-w-5xl px-6 py-16 md:py-20">
                 {/* Heading */}
                 <div className="max-w-4xl">
                     <h1 className="font-bold tracking-tight text-4xl sm:text-6xl md:text-7xl ">
