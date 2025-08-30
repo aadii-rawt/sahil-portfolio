@@ -45,9 +45,9 @@ export default function HeroSection() {
                     className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl"
                 >
                     {[
-                        { n: "+1", t: <>Years of<br />Experience</> },
-                        { n: "+15", t: <>Projects<br />Completed</> },
-                        { n: "+45", t: <>Technologies<br />Used</> },
+                        { n: "+1", t: 'Years of Experience' },
+                        { n: "+15", t: 'Projects Completed' },
+                        { n: "+45", t: 'Technologies Used' },
                     ].map((s, i) => (
                         <motion.div key={i} variants={dropIn(0, -18)}>
                             <div className="text-6xl font-semibold">{s.n}</div>
