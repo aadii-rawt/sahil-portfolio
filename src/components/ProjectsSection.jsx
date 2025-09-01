@@ -47,10 +47,16 @@ const ProjectsSection = () => {
                     link="https://moneylyst.in"
                 />
                 <ProjectCard
-                    title="Dazzle UI"
-                    desc="Styling Library"
-                    img="/dora.png"
-                    link="https://dazzleui.netlify.app"
+                    title="Github Wrapped"
+                    desc="Yearly summary of github profile"
+                    img="/wrapped.png"
+                    link="https://git-wrapped.dotdazzle.in"
+                />
+                <ProjectCard
+                    title="Object Detection"
+                    desc="Detect objects shown in camera"
+                    img="/object.png"
+                    link="objecstdetection.netlify.app"
                 />
             </motion.div>
         </div>
