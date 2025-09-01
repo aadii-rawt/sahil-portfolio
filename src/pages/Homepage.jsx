@@ -1,4 +1,3 @@
-import React from 'react'
 import HeroSection from '../components/Hero'
 import MainCard from '../components/MainCard'
 import ProjectsSection from '../components/ProjectsSection'
