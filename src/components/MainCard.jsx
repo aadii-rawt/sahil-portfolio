@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { dropIn, stagger } from "../utils/motions";
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import { IoLocationOutline } from "react-icons/io5";
+import { IoLocationOutline, IoLogoJavascript } from "react-icons/io5";
+import { SiMongodb } from "react-icons/si";
 
 const MainCard = () => {
     return (
@@ -20,7 +21,7 @@ const MainCard = () => {
             {/* Glow */}
             <div className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-[#8B5CF6]/40 via-fuchsia-500/20 to-transparent blur-2xl" />
 
-            <div className="relative w-[30rem] min-h-[35rem] rounded-3xl bg-gradient-to-b from-zinc-900 to-zinc-800 p-6 md:p-7 shadow-2xl border border-white/10 overflow-hidden">
+            <div className="relative xl:w-[30rem] sm:w-[100%] w-[90%] min-w-[315px]  mx-auto md:] rounded-3xl bg-gradient-to-b from-zinc-900 to-zinc-800 p-6 md:p-7 shadow-2xl border border-white/10 overflow-hidden">
                 {/* Corner Accent */}
                 <motion.div
                     variants={dropIn(0.15, -16)}
@@ -37,9 +38,10 @@ const MainCard = () => {
                 >
                     <motion.div variants={dropIn(0, -14)} className="flex items-center gap-3">
                         <div className="h-10 w-10 rounded-xl bg-zinc-700/60 grid place-items-center">
-                            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5">
+                            {/* <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5">
                                 <path d="M12 2v6M12 16v6M2 12h6M16 12h6M5.5 5.5l4.2 4.2M14.3 14.3l4.2 4.2M18.5 5.5l-4.2 4.2M9.7 14.3l-4.2 4.2" />
-                            </svg>
+                            </svg> */}
+                            <img src="/batman.jpg" alt="" className="rounded-lg" />
                         </div>
                         <div>
                             <p className="text-zinc-400 text-xs uppercase tracking-widest">Software Developer</p>
@@ -49,7 +51,7 @@ const MainCard = () => {
 
                     <motion.span
                         variants={dropIn(0.05, -10)}
-                        className="rounded-full bg-[#7C3AED]/20 text-[#E9D5FF] text-xs px-3 py-1 border border-[#7C3AED]/40"
+                        className="rounded-full sm:block hidden bg-[#7C3AED]/20 text-[#E9D5FF] text-xs px-3 py-1 border border-[#7C3AED]/40"
                     >
                         Available for Freelance
                     </motion.span>
@@ -70,8 +72,8 @@ const MainCard = () => {
                         Concept • Dashboard
                     </div>
                     <div className="absolute right-4 bottom-4 flex items-center gap-2 rounded-xl bg-black/50 backdrop-blur px-3 py-1 border border-white/10">
-                        <div className="h-6 w-6 rounded-full bg-gradient-to-tr from-[#7C3AED] to-fuchsia-500" />
-                        <span className="text-sm text-zinc-400">Neon Theme</span>
+                        <div className="sm:h-6 sm:w-6 w-4 h-4 rounded-full bg-gradient-to-tr from-[#7C3AED] to-fuchsia-500" />
+                        <span className="sm:text-sm text-xs text-zinc-400">Neon Theme</span>
                     </div>
 
                     <motion.div
@@ -93,8 +95,12 @@ const MainCard = () => {
                     className="mt-6 flex items-center justify-between"
                 >
                     <motion.div variants={dropIn(0, -10)} className="flex -space-x-3">
-                        {[0, 1, 2, 3].map(i => (
-                            <div key={i} className="h-8 w-8 rounded-full border border-white/10 bg-zinc-700/60" />
+                        {[<IoLogoJavascript />, <FaReact />, <FaNodeJs />, <SiMongodb />].map(i => (
+                            <div key={i} className="" >
+                                <div className=" border text-zinc-300 border-[#6529cd] text-2xl border-white/10 bg-zinc-700/60 rounded-full p-1">
+                                    {i}
+                                </div>
+                            </div>
                         ))}
                     </motion.div>
 

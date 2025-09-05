@@ -5,7 +5,7 @@ import MainCard from "./MainCard";
 export default function HeroSection() {
     return (
         <section className="text-white">
-            <div className="mx-auto max-w-5xl px-6 py-16 md:py-20">
+            <div className="mx-auto max-w-5xl px-6 py-8 sm:py-16 md:py-20 text-center">
                 {/* Heading */}
                 <motion.div
                     variants={stagger(0.1, 0)}
@@ -16,20 +16,20 @@ export default function HeroSection() {
                 >
                     <motion.h1
                         variants={dropIn(0, -28)}
-                        className="font-bold tracking-tight text-4xl sm:text-6xl md:text-7xl"
+                        className="font-bold tracking-tight text-4xl sm:text-6xl xl:text-7xl"
                     >
-                        <span className="block">Transforming Your</span>
+                        <span className="block">Transforming </span>
                         <span className="block">
-                            Ideas into{" "}
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8B5CF6] to-[#a452f6]">
-                                Reality
-                            </span>
+                            Ideas into Reality{" "}
+                        </span>
+                        <span className="text-transparent block bg-clip-text bg-gradient-to-r from-[#8B5CF6] to-[#a452f6]">
+                            With Code
                         </span>
                     </motion.h1>
 
                     <motion.p
                         variants={dropIn(0.08, -20)}
-                        className="mt-6 text-zinc-400 text-base !leading-[1.4] md:text-lg max-w-3xl"
+                        className="mt-6 text-zinc-400 text-base !leading-[1.4] md:text-lg max-w-3xl lg:text-start"
                     >
                         Passionate about creating intuitive and engaging user experiences. Specialize in
                         transforming ideas into beautifully crafted products.
@@ -42,7 +42,7 @@ export default function HeroSection() {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.25 }}
-                    className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl"
+                    className="md:mt-12 mt-8 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl"
                 >
                     {[
                         { n: "+1", t: 'Years of Experience' },
@@ -50,7 +50,7 @@ export default function HeroSection() {
                         { n: "+45", t: 'Technologies Used' },
                     ].map((s, i) => (
                         <motion.div key={i} variants={dropIn(0, -18)}>
-                            <div className="text-6xl font-semibold">{s.n}</div>
+                            <div className="md:text-6xl text-2xl font-semibold">{s.n}</div>
                             <div
                                 className="mt-2 text-zinc-400 text-sm uppercase tracking-wide"
                                 dangerouslySetInnerHTML={{ __html: s.t }}
@@ -65,7 +65,7 @@ export default function HeroSection() {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.2 }}
-                    className="mt-10 flex items-center gap-6"
+                    className="lg:mt-10 mt-14 flex items-center lg:justify-start justify-center gap-6"
                 >
                     <motion.a
                         variants={dropIn(0.05)}
