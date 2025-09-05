@@ -14,7 +14,7 @@ const skills = [
     { title: "TailwindCSS", img: "/tailwind.png" },
     { title: "Figma", img: "/figma.avif" },
     { title: "Postman", img: "/postman.png" },
-    { title: "MaterialUI", img: "/material-ui.png" }, // <- avoid spaces in filenames
+    { title: "MaterialUI", img: "/material ui.png" }, // <- avoid spaces in filenames
     { title: "Framer Motion", img: "/framer.png" },
 ];
 
@@ -43,7 +43,7 @@ const SkillsSection = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.25 }}
-                className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 mt-2 px-6"
+                className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 mt-2 px-6"
             >
                 {skills.map((s, i) => (
                     <SkillCard key={s.title + i} title={s.title} img={s.img} />
@@ -59,7 +59,7 @@ const SkillCard = ({ title, img }) => {
             variants={dropIn(0, -18)}
             whileHover={{ y: -4 }}
             transition={{ type: "spring", stiffness: 220, damping: 18 }}
-            className="p-3 rounded-xl flex items-center gap-4 cursor-pointer
+            className="p-3 rounded-xl flex sm:flex-row flex-col items-center gap-4 cursor-pointer
                  bg-zinc-800/80 border border-white/10 hover:bg-[#8B5CF6]/90 hover:border-[#8B5CF6]/50
                  backdrop-blur-sm"
         >
@@ -69,7 +69,7 @@ const SkillCard = ({ title, img }) => {
                 className="w-14 h-14 rounded-lg object-contain bg-white/90"
                 loading="lazy"
             />
-            <p className="text-white font-semibold text-lg md:text-xl tracking-tight">
+            <p className="text-white text-center font-semibold text-lg md:text-xl tracking-tight">
                 {title}
             </p>
         </motion.div>
