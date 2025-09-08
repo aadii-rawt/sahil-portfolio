@@ -16,7 +16,7 @@ export default function HeroSection() {
                 >
                     <motion.h1
                         variants={dropIn(0, -28)}
-                        className="font-bold tracking-tight text-4xl sm:text-6xl xl:text-7xl"
+                        className="font-bold tracking-tight md:text-start text-4xl sm:text-6xl xl:text-7xl"
                     >
                         <span className="block">Transforming </span>
                         <span className="block">
@@ -69,8 +69,9 @@ export default function HeroSection() {
                 >
                     <motion.a
                         variants={dropIn(0.05)}
-                        href="#contact"
-                        className="inline-flex items-center justify-center rounded-xl px-6 py-3 font-semibold shadow-lg  bg-[#7C3AED] hover:bg-[#6D28D9] focus:outline-none focus:ring-2 focus:ring-[#8B5CF6]/60"
+                        href="https://linkedin.com/in/sahil-rathore123"
+                        target="_blank"
+                        className="inline-flex items-center justify-center rounded-xl px-6 py-3 font-semibold shadow-lg  bg-[#7C3AED] hover:bg-[#6D28D9] focus:outline-none focus:ring-2 focus:ring-[#8B5CF6]/60 z-50"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                     >
