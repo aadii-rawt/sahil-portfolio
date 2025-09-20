@@ -6,6 +6,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLocationOutline, IoLogoJavascript } from "react-icons/io5";
 import { SiMongodb } from "react-icons/si";
+import { BsBrowserChrome } from "react-icons/bs";
 
 const MainCard = () => {
     return (
@@ -118,6 +119,9 @@ const MainCard = () => {
                 >
                     <motion.a variants={dropIn(0, -10)} href="https://github.com/sahillrathore" target="_blank" rel="noreferrer">
                         <FaGithub />
+                    </motion.a>
+                    <motion.a variants={dropIn(0, -10)} href="https://dotdazzle.in" target="_blank" rel="noreferrer">
+                        <BsBrowserChrome />
                     </motion.a>
                     <motion.a variants={dropIn(0.03, -10)} href="https://instagram.com/sahill_rathore" target="_blank" rel="noreferrer">
                         <FaInstagram />
