@@ -53,6 +53,12 @@ const ProjectsSection = () => {
                     link="https://git-wrapped.dotdazzle.in"
                 />
                 <ProjectCard
+                    title="PDF Editor"
+                    desc="Add Signs to PDF"
+                    img="/fluxpdf.png"
+                    link="fluxpdf.netlify.app"
+                />
+                <ProjectCard
                     title="Object Detection"
                     desc="Detect objects shown in camera"
                     img="/object.png"
