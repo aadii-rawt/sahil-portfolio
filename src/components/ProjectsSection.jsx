@@ -53,6 +53,12 @@ const ProjectsSection = () => {
                     link="https://git-wrapped.dotdazzle.in"
                 />
                 <ProjectCard
+                    title="Typing Muse"
+                    desc="Test your typing ability"
+                    img="/typing.png"
+                    link="typingmuse.netlify.app"
+                />
+                <ProjectCard
                     title="PDF Editor"
                     desc="Add Signs to PDF"
                     img="/fluxpdf.png"
