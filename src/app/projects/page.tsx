@@ -99,6 +99,18 @@ const ProjectsPage = () => {
       github: "Sahillrathore/pdf-editor",
       live: "https://fluxpdf.netlify.app",
     },
+    {
+      id: 8,
+      title: "Shoe Commerce",
+      description:
+        "E-commerce website",
+      category: "fullstack",
+      technologies: ["React", "Tailwind CSS", "NodeJS", "Express", "MongoDB", "Admin Panel"],
+      year: "2025",
+      image: "/shoecom.png",
+      github: "Sahillrathore/shoe-commerce",
+      live: "https://shoe-commerce-vert.vercel.app",
+    },
   ];
 
   const fetchStars = async (repo: string) => {
