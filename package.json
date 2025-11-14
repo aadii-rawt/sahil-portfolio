@@ -1,35 +1,42 @@
 {
-  "name": "myportfolio",
+  "name": "portffolio",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
   "dependencies": {
-    "axios": "^1.7.2",
-    "framer-motion": "^11.18.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^5.5.0",
-    "react-router-dom": "^6.23.1",
-    "react-simple-typewriter": "^5.0.1",
-    "react-toastify": "^10.0.5"
+    "@databuddy/sdk": "^2.0.0",
+    "@next/font": "^14.2.15",
+    "@vercel/analytics": "^1.5.0",
+    "cursor-effects": "^1.0.17",
+    "framer-motion": "^12.23.12",
+    "lucide": "^0.542.0",
+    "lucide-react": "^0.542.0",
+    "motion": "^12.23.24",
+    "next": "15.5.2",
+    "next-seo": "^6.8.0",
+    "next-sitemap": "^4.2.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-github-calendar": "^4.5.11",
+    "react-tooltip": "^5.30.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
-    "@vitejs/plugin-react": "^4.2.1",
-    "autoprefixer": "^10.4.19",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.4",
-    "vite": "^5.2.0"
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "custom-cursor": "^2.3.2",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.2",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
