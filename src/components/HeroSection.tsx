@@ -46,7 +46,7 @@ const HeroSection = () => {
                     alt="Meet logo"
                     width={22}
                     height={22}
-                    className="opacity-80 transition-opacity duration-300 group-hover:opacity-100"
+                    className="opacity-80 transition-opacity rounded-full duration-300 group-hover:opacity-100"
                   />
                 </div>
               </a>

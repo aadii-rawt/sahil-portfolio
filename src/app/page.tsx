@@ -28,12 +28,12 @@ const page = () => {
               <Navbar />
               <HeroSection />
 
-              <Separator />
-              <Heading heading="Projects" showButton buttonLink="/projects" />
 
               <Heading heading="Stack" />
               <SkillsSection />
               
+              <Separator />
+              <Heading heading="Projects" showButton buttonLink="/projects" />
               <ProjectsSection />
               <Separator />
               <Heading heading="Experience" />

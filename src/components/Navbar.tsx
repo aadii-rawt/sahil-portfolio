@@ -50,7 +50,7 @@ setIsCommandMenuOpen
           <div className="flex items-center gap-3 sm:gap-6 lg:gap-8">
             <div className="hidden items-center gap-6 md:flex lg:gap-8">
               <button
-                className="font-space-grotesk-300 font-sans font-medium text-white transition-colors hover:text-gray-300"
+                className="font-space-grotesk-300 cursor-pointer font-sans font-medium text-white transition-colors hover:text-gray-300"
                 onClick={() => router.push("/projects")}
               >
                 Projects
@@ -137,7 +137,7 @@ setIsCommandMenuOpen
                 Art
               </button> */}
 
-              <button
+              {/* <button
                 className="block w-full rounded-lg px-3 py-3 text-left font-sans font-medium text-white transition-colors hover:bg-[#1C1C1F] hover:text-gray-300"
                 onClick={() => {
                   setIsMenuOpen(false);
@@ -145,7 +145,7 @@ setIsCommandMenuOpen
                 }}
               >
                 Search
-              </button>
+              </button> */}
                {/* <button
                 className="block w-full rounded-lg px-3 py-3 text-left font-sans font-medium text-white transition-colors hover:bg-[#1C1C1F] hover:text-gray-300"
                 onClick={() => router.push("/artgallery")}
