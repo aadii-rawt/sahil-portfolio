@@ -41,24 +41,6 @@ const skills = [
     ),
   },
   {
-    name: "Figma",
-    icon: (
-      <img src="/figma.svg" alt="" />
-    ),
-  },
-  {
-    name: "Git",
-    icon: (
-      <img src="/git.svg" alt="" />
-    ),
-  },
-  {
-    name: "Github",
-    icon: (
-      <img src="/github.svg" alt="" className="bg-white rounded-full" />
-    ),
-  },
-  {
     name: "Node.js",
     icon: (
       <img src="/nodejs.svg" alt="" />
@@ -80,6 +62,48 @@ const skills = [
     name: "Firebase",
     icon: (
       <img src="/firebase.svg" alt="" />
+    ),
+  },
+  {
+    name: "Figma",
+    icon: (
+      <img src="/figma.svg" alt="" />
+    ),
+  },
+  {
+    name: "Git",
+    icon: (
+      <img src="/git.svg" alt="" />
+    ),
+  },
+  {
+    name: "Github",
+    icon: (
+      <img src="/github.svg" alt="" className="bg-white rounded-full" />
+    ),
+  },
+  {
+    name: "AWS",
+    icon: (
+      <img src="/aws.svg" alt="" className="bg-white rounded-full" />
+    ),
+  },
+  {
+    name: "Digital Ocean",
+    icon: (
+      <img src="/digitalocean.svg" alt="" className="bg-white rounded-full" />
+    ),
+  },
+  {
+    name: "Prisma",
+    icon: (
+      <img src="/prisma.svg" alt="" className="bg-white rounded-full" />
+    ),
+  },
+  {
+    name: "Neon DB",
+    icon: (
+      <img src="/" alt="" className="bg-white rounded-full" />
     ),
   },
 ];
