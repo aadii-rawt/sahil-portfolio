@@ -49,13 +49,13 @@ const skills = [
   {
     name: "Express.js",
     icon: (
-     <img src="/express.svg" alt="" className="bg-white rounded-full" />
+      <img src="/express.svg" alt="" className="bg-white rounded-full" />
     ),
   },
   {
     name: "MongoDB",
     icon: (
-     <img src="/mongo.svg" alt="" />
+      <img src="/mongo.svg" alt="" />
     ),
   },
   {
@@ -121,9 +121,10 @@ const SkillsSection = () => {
             onMouseEnter={() => setHovered(index)}
             onMouseLeave={() => setHovered(null)}
           >
-            <span className="cursor-default rounded-full border border-[#282828] bg-[#0F0F0F] px-4 py-1.5 text-xs text-gray-200 transition-all hover:border-gray-600 sm:px-5 sm:py-2 sm:text-sm md:text-base">
+            <div className="cursor-default flex items-center justify-center gap-2 rounded-full border border-[#282828] bg-[#0F0F0F] px-4 py-1.5 text-xs text-gray-200 transition-all hover:border-gray-600 sm:px-4 sm:py-2 sm:text-sm md:text-base">
+              <div className="h-8 w-8 sm:h-8  sm:w-8">{skill.icon}</div>
               {skill.name}
-            </span>
+            </div>
 
             <AnimatePresence>
               {hovered === index && (
