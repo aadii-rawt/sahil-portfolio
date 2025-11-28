@@ -38,8 +38,9 @@ const page = () => {
               <Separator />
               <Heading heading="Experience" />
               <ExperienceSection
-                logo="/conduit.png"
+                logo="/storelogo.png"
                 title="Storeshoppy Pvt. Ltd"
+                period="Nov 2024 - Present"
                 // link="https://conduitcommerce.com/"
                 type="Software Developer"
                 highlights={[
@@ -51,9 +52,10 @@ const page = () => {
               />
               <ExperienceSection
                 color="orange-500"
-                logo="/conduit.png"
-                link="https://mach5.io/"
+                logo="/storelogo.png"
+                // link="https://mach5.io/"
                 title="Storeshoppy Pvt. Ltd"
+                period="Aug 2024 - Nov 2024"
                 type="Front End Developer Intern"
                 highlights={[
                   "Worked as a Frontend Developer, transforming Figma design into fully responsive, high-performance website ",

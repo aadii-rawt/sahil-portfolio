@@ -4,8 +4,8 @@ import GitHubCalendar from 'react-github-calendar';
 
 const Graph = () => {
   return (
-    <div className='bg-black flex justify-center p-4'>
-      <GitHubCalendar username="Sahillrathore" blockRadius={3}/>
+    <div className='bg-black border border-zinc-700 border-dashed flex justify-center p-4'>
+      <GitHubCalendar username="Sahillrathore" blockRadius={2}/>
     </div>
   )
 }

@@ -12,6 +12,7 @@ interface ExperienceProps {
   skills: string[];
   color?: string;
   link?: string;
+  period?: string;
 }
 
 const ExperienceSection: React.FC<ExperienceProps> = ({
@@ -22,6 +23,7 @@ const ExperienceSection: React.FC<ExperienceProps> = ({
   skills,
   color,
   link,
+  period
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const toggleExpansion = () => setIsExpanded((prev) => !prev);
@@ -47,11 +49,12 @@ const ExperienceSection: React.FC<ExperienceProps> = ({
           </a>
         </div>
 
-        <div className="flex flex-grow flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+        <div className="flex flex-grow flex-col gap-2 sm:gap-3">
           <h2 className="text-lg font-semibold sm:text-2xl">{title}</h2>
           <p className="w-fit rounded-md border border-[#2C2C2F] bg-[#1E1F21] px-3 py-1 text-xs text-gray-300 sm:text-sm">
             {type}
           </p>
+          <p className="text-sm text-zinc-400 pl-1">{period}</p>
         </div>
 
         <motion.div
