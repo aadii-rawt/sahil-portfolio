@@ -103,7 +103,7 @@ const skills = [
   {
     name: "Neon DB",
     icon: (
-      <img src="/" alt="" className="bg-white rounded-full" />
+      <img src="/neondb.png" alt="" className="bg-white rounded-full" />
     ),
   },
 ];

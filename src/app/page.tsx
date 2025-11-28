@@ -36,7 +36,7 @@ const page = () => {
               <Heading heading="Projects" showButton buttonLink="/projects" />
               <ProjectsSection />
               <Separator />
-              <Heading heading="Experience" />
+              <Heading heading="1+ Year of Experience" />
               <ExperienceSection
                 logo="/storelogo.png"
                 title="Storeshoppy Pvt. Ltd"
