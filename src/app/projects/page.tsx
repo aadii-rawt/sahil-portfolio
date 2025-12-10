@@ -13,6 +13,7 @@ const ProjectsPage = () => {
     { id: "fullstack", name: "Full Stack" },
     // { id: "freelance", name: "Freelance" },
     { id: "frontend", name: "Frontend" },
+    { id: "android", name: "Android" },
   ];
 
   const projects = [
@@ -65,6 +66,18 @@ const ProjectsPage = () => {
     },
     {
       id: 5,
+      title: "Shoe Commerce",
+      description:
+        "E-commerce website",
+      category: "fullstack",
+      technologies: ["React", "Tailwind CSS", "NodeJS", "Express", "MongoDB", "Admin Panel"],
+      year: "2025",
+      image: "/shoecom.png",
+      github: "Sahillrathore/shoe-commerce",
+      live: "https://shoe-commerce-vert.vercel.app",
+    },
+    {
+      id: 6,
       title: "Github Wrapped",
       description:
         "Yearly summary of github profile.",
@@ -76,7 +89,7 @@ const ProjectsPage = () => {
       live: "https://git-wrapped.dotdazzle.in",
     },
     {
-      id: 6,
+      id: 7,
       title: "Password Manager",
       description:
         "A minimalistic password manager to store the users credentials securely",
@@ -88,7 +101,7 @@ const ProjectsPage = () => {
       live: "https://forgetnot.netlify.app",
     },
     {
-      id: 7,
+      id: 8,
       title: "Pdf Signer",
       description:
         "For digitally signing the pdf and adding images",
@@ -100,16 +113,16 @@ const ProjectsPage = () => {
       live: "https://fluxpdf.netlify.app",
     },
     {
-      id: 8,
-      title: "Shoe Commerce",
+      id: 9,
+      title: "Moneylyst Mobile App",
       description:
-        "E-commerce website",
-      category: "fullstack",
-      technologies: ["React", "Tailwind CSS", "NodeJS", "Express", "MongoDB", "Admin Panel"],
+        "Mobile application to manage expenses",
+      category: "android",
+      technologies: ["React Native", "NodeJs", "NativeWind"],
       year: "2025",
-      image: "/shoecom.png",
-      github: "Sahillrathore/shoe-commerce",
-      live: "https://shoe-commerce-vert.vercel.app",
+      image: "/moneylystapp.png",
+      // github: "",
+      live: "https://play.google.com/store/apps/details?id=com.moneylystapk&hl=en_IN",
     },
   ];
 
@@ -162,7 +175,7 @@ const ProjectsPage = () => {
         </div>
 
         <div className="mx-auto max-w-6xl px-6 py-10 sm:max-w-[80%]">
-          <div className="mb-12 flex w-fit gap-1 rounded-full border border-[#1C1C1F] p-1  mx-auto">
+          <div className="mb-12 flex w-fit gap-1 rounded-full border border-[#2a2a2e] p-1  mx-auto">
             {categories.map((category) => (
               <button
                 key={category.id}
@@ -170,7 +183,7 @@ const ProjectsPage = () => {
                 className={`font-space-grotesk-500 rounded-full px-2.5 py-1.5 text-xs transition-all duration-300 sm:px-4 sm:py-2 sm:text-sm ${
                   selectedCategory === category.id
                     ? "bg-[#1C1C1C] text-white"
-                    : "text-[#666] hover:text-[#999]"
+                    : "text-[#707070] hover:text-[#999]"
                 }`}
               >
                 {category.name}
