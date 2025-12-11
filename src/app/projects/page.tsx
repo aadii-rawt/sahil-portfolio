@@ -74,7 +74,7 @@ const ProjectsPage = () => {
       year: "2025",
       image: "/shoecom.png",
       github: "Sahillrathore/shoe-commerce",
-      live: "https://shoe-commerce-vert.vercel.app",
+      live: "https://shoe-nation.vercel.app/",
     },
     {
       id: 6,
