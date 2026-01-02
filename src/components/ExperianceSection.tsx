@@ -13,6 +13,7 @@ interface ExperienceProps {
   color?: string;
   link?: string;
   period?: string;
+  isOpen?: boolean;
 }
 
 const ExperienceSection: React.FC<ExperienceProps> = ({
@@ -23,9 +24,10 @@ const ExperienceSection: React.FC<ExperienceProps> = ({
   skills,
   color,
   link,
-  period
+  period,
+  isOpen
 }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(isOpen);
   const toggleExpansion = () => setIsExpanded((prev) => !prev);
 
   return (

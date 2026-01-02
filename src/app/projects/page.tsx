@@ -18,6 +18,18 @@ const ProjectsPage = () => {
 
   const projects = [
     {
+      id: 101,
+      title: "Gather",
+      description:
+        "Gather is an AI-powered forms builder",
+      category: "fullstack",
+      technologies: ["React", "NodeJS", "Express", "PostgreSQL", "DrizzleORM", "LLM Models", "Tailwind CSS", "Clerk"],
+      year: "2025",
+      image: "/gather.png",
+      live: "https://gatherforms.vercel.app",
+      github: "Sahillrathore/gather-forms"
+    },
+    {
       id: 1,
       title: "Moneylyst",
       description:

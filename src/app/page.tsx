@@ -41,6 +41,7 @@ const page = () => {
                 logo="/storelogo.png"
                 title="Storeshoppy Pvt. Ltd"
                 period="Nov 2024 - Present"
+                isOpen={true}
                 // link="https://conduitcommerce.com/"
                 type="Software Developer"
                 highlights={[
