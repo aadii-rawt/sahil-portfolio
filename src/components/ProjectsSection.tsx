@@ -10,6 +10,12 @@ const ProjectsSection = () => {
       </div>
 
       <ProjectsCard
+        title="Gather"
+        description="Gather is an AI-powered forms builder."
+        image="/gather.png"
+        url="https://gatherforms.vercel.app"
+      />
+      <ProjectsCard
         title="Moneylyst"
         description="Insightful Finance Tracker."
         image="/moneylyst.png"
@@ -20,12 +26,6 @@ const ProjectsSection = () => {
         description="Chess Game Website."
         image="/chess.png"
         url="https://wechess.netlify.app"
-      />
-      <ProjectsCard
-        title="DazzleUI"
-        description="UI Elements Styling Library."
-        image="/dazzleui.png"
-        url="https://dazzleui.netlify.app"
       />
       <ProjectsCard
         title="Github Wrapped"
