@@ -56,7 +56,7 @@ const Taskbar = () => {
         href="https://www.instagram.com/sahill_rathore"
         target="_blank"
         rel="noopener noreferrer"
-        className="rounded-full bg-[#282828] p-2 transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
+        className="rounded-full text-white bg-[#282828] p-2 transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
       >
        <InstagramIcon/>
       </a>
@@ -65,7 +65,7 @@ const Taskbar = () => {
         href="https://dotdazzle.in"
         target="_blank"
         rel="noopener noreferrer"
-        className="rounded-full bg-[#282828] p-2 transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
+        className="rounded-full text-white bg-[#282828] p-2 transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
       >
        <Globe/>
       </a>
