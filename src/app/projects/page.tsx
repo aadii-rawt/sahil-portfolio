@@ -21,11 +21,11 @@ const ProjectsPage = () => {
       id: 101,
       title: "Gather",
       description:
-        "Gather is an AI-powered forms builder",
+        "Gather is an AI-powered forms app that lets you create complete forms from a single prompt.",
       category: "fullstack",
       technologies: ["React", "NodeJS", "Express", "PostgreSQL", "DrizzleORM", "LLM Models", "Tailwind CSS", "Clerk"],
       year: "2025",
-      image: "/gather.png",
+      image: "/gather-mockup1.png",
       live: "https://gatherforms.vercel.app",
       github: "Sahillrathore/gather-forms"
     },
@@ -33,22 +33,22 @@ const ProjectsPage = () => {
       id: 1,
       title: "Moneylyst",
       description:
-        "Finance Tracker",
+        "Insightful Finance Tracker, Effortlessly monitor and manage all your expenses.",
       category: "fullstack",
       technologies: ["React", "NodeJS", "Express", "MongoDB", "Tailwind CSS", "ChartsJS"],
       year: "2025",
-      image: "/moneylyst.png",
+      image: "/moneylyst-mockup.png",
       live: "https://moneylyst.in",
     },
     {
       id: 2,
       title: "Multiplayer Chess",
       description:
-        "Chess Game Website",
+        "A multiplayer chess game that features real time play between two players and allows users to review their past games.",
       category: "fullstack",
       technologies: ["React", "Websockets", "ShadCN", "TailwindCSS", "Chess.js", "NodeJS", "Express", "MongoDB",],
       year: "2025",
-      image: "/chess.png",
+      image: "/chess-mockup.png",
       github: "Sahillrathore/multiplayer-chess",
       live: "https://wechess.netlify.app",
     },
@@ -60,15 +60,39 @@ const ProjectsPage = () => {
       category: "fullstack",
       technologies: ["React", "TailwindCSS", "NodeJS", "Express", "MongoDB",],
       year: "2025",
-      image: "/dazzleui.png",
+      image: "/dazzleui-mockup.png",
       github: "Sahillrathore/dazzleui",
       live: "https://dazzleui.netlify.app",
+    },
+    {
+      id: 6,
+      title: "Github Wrapped",
+      description:
+        "GitHub Wrapped – Generate a personalized, year-in-review summary of your GitHub activity.",
+      category: "fullstack",
+      technologies: ["React", "Tailwind CSS", "Github API", "NodeJS", "Express", "MongoDB"],
+      year: "2025",
+      image: "/wrapped-mockup.png",
+      github: "aadii-rawt/github-wrapped",
+      live: "https://git-wrapped.dotdazzle.in",
+    },
+    {
+      id: 7,
+      title: "Password Manager",
+      description:
+        "A minimalistic password manager to store the users credentials securely",
+      category: "fullstack",
+      technologies: ["React", "TailwindCSS", "Firebase", "CryptoJS"],
+      year: "2024",
+      image: "/forgetnot-mockup.png",
+      github: "Sahillrathore/password-manager",
+      live: "https://forgetnot.netlify.app",
     },
     {
       id: 4,
       title: "Moose Type",
       description:
-        "A simple typing website to test your speed.",
+      "A simple typing website to test your speed.",
       category: "frontend",
       technologies: ["React", "Tailwind CSS"],
       year: "2025",
@@ -84,33 +108,9 @@ const ProjectsPage = () => {
       category: "fullstack",
       technologies: ["React", "Tailwind CSS", "NodeJS", "Express", "MongoDB", "Admin Panel"],
       year: "2025",
-      image: "/shoecom.png",
+      image: "/shoecom-mockup.png",
       github: "Sahillrathore/shoe-commerce",
       live: "https://shoe-nation.vercel.app/",
-    },
-    {
-      id: 6,
-      title: "Github Wrapped",
-      description:
-        "Yearly summary of github profile.",
-      category: "fullstack",
-      technologies: ["React", "Tailwind CSS", "Github API", "NodeJS", "Express", "MongoDB"],
-      year: "2025",
-      image: "/gitwrapped.png",
-      github: "aadii-rawt/github-wrapped",
-      live: "https://git-wrapped.dotdazzle.in",
-    },
-    {
-      id: 7,
-      title: "Password Manager",
-      description:
-        "A minimalistic password manager to store the users credentials securely",
-      category: "fullstack",
-      technologies: ["React", "TailwindCSS", "Firebase", "CryptoJS"],
-      year: "2024",
-      image: "/passwordmanager.png",
-      github: "Sahillrathore/password-manager",
-      live: "https://forgetnot.netlify.app",
     },
     {
       id: 8,
@@ -242,11 +242,11 @@ const ProjectsPage = () => {
                     )}
                   </div>
 
-                  <div className="absolute top-4 right-4 rounded-full bg-black/70 px-2 py-1 backdrop-blur-sm">
-                    <span className="font-space-grotesk-400 text-xs text-[#888]">
+                  {/* <div className="absolute top-4 right-4 rounded-full bg-white/60 px-2 py-1 backdrop-blur-sm">
+                    <span className="font-space-grotesk-400 text-xs text-[#343434]">
                       {project.year}
                     </span>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="flex flex-1 flex-col p-6">

@@ -39,14 +39,14 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
     <div className="relative font-space-grotesk">
       <div
         ref={cardRef}
-        className={`relative bg-black pb-6 transition-all duration-300 ${url ? "cursor-pointer" : ""} `}
+        className={`relative bg-black py-6 transition-all border-b-2 border-[#404043] duration-300 ${url ? "cursor-pointer" : ""} `}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onMouseMove={handleMouseMove}
         onClick={handleClick}
       >
         <div
-          className="mx-2 flex flex-row items-center justify-between gap-3 border-b-2 border-[#404043] pt-3 pb-3 transition-transform duration-300 sm:mx-4 sm:gap-6 sm:pt-4 sm:pb-4 lg:mx-18 lg:gap-10 lg:pt-3 lg:pb-3"
+          className="mx-2 flex md:flex-row flex-col-reverse items-center justify-between gap-3 pt-3 pb-3 transition-transform duration-300 sm:mx-4 sm:gap-6 sm:pt-4 sm:pb-4 lg:mx-18 lg:gap-10 lg:pt-3 lg:pb-3"
           style={{
             transform: isHovered ? "scale(1.02)" : "scale(1)",
           }}
@@ -55,7 +55,7 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
             <div className="text-2xl font-normal text-white transition-colors duration-300 sm:text-3xl lg:text-5xl">
               {title}
             </div>
-            <div className="sm:text-md mt-1 text-lg text-gray-400 transition-colors duration-300 sm:mt-2 lg:mt-3 lg:text-lg">
+            <div className="sm:text-md mt-1 text-lg lg:w-[32rem] md:w-sm text-gray-400 transition-colors duration-300 sm:mt-2 lg:mt-3 lg:text-lg">
               {description}
             </div>
           </div>
@@ -65,8 +65,8 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
               src={image}
               alt={`${title} screenshot`}
               width={400}
-              height={250}
-              className="h-15 w-28 rounded-lg object-cover transition-all duration-300 sm:h-32 sm:w-44 lg:h-[150px] lg:w-[300px]"
+              height={300}
+              className="h-full w-full rounded-lg object-cover transition-all duration-300 sm:h-full sm:w-full lg:h-[200px] lg:w-[310px]"
               style={{
                 filter: isHovered ? "brightness(1.1)" : "brightness(1)",
               }}

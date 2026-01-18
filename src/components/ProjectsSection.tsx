@@ -11,26 +11,26 @@ const ProjectsSection = () => {
 
       <ProjectsCard
         title="Gather"
-        description="Gather is an AI-powered forms builder."
-        image="/gather.png"
+        description="Gather is an AI-powered forms app that lets you create complete forms from a single prompt."
+        image="/gather-mockup1.png"
         url="https://gatherforms.vercel.app"
       />
       <ProjectsCard
         title="Moneylyst"
-        description="Insightful Finance Tracker."
-        image="/moneylyst.png"
+        description="Insightful Finance Tracker, Effortlessly monitor and manage all your expenses."
+        image="/moneylyst-mockup.png"
           url="https://moneylyst.in"
       />
       <ProjectsCard
         title="Multiplayer Chess"
-        description="Chess Game Website."
-        image="/chess.png"
+        description="A multiplayer chess game that features real time play between two players and allows users to review their past games"
+        image="/chess-mockup.png"
         url="https://wechess.netlify.app"
       />
       <ProjectsCard
         title="Github Wrapped"
-        description="Yearly summary of github profile."
-        image="/gitwrapped.png"
+        description="GitHub Wrapped – Generate a personalized, year-in-review summary of your GitHub activity."
+        image="/wrapped-mockup.png"
         url="https://git-wrapped.dotdazzle.in"
       />
     </>
