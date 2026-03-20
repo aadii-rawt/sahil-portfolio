@@ -23,8 +23,8 @@ const HeroSection = () => {
 
             <div className="mt-4 flex flex-wrap gap-3 sm:mt-6 md:mt-8">
               <a
-                href="/Sahillrathore.pdf"
-                download="Sahillrathore-resume.pdf"
+                href="https://drive.google.com/file/d/1OrYW1NVKOg4XkDR503Acn17zbMI0y-B5/view?usp=drive_link"
+                target="_blank"
                 className="group inline-flex items-center gap-2 rounded-full border border-[#2A2A2A] bg-[#181818] px-5 py-3 text-sm text-gray-300 transition-all duration-300 hover:border-[#3A3A3A] hover:bg-[#1F1F1F] hover:text-white"
               >
                 <span className="font-medium">Download Resume</span>
